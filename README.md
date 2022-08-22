@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/Ojv26Lq.png" width="150px" height="auto" />
+  <img src="https://i.imgur.com/PhPwrQA.png" width="150px" height="auto" />
 </p>
 <h1>Black Hole</h1>
 <p align="center" >
