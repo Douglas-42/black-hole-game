@@ -9,8 +9,8 @@
   <img src="https://i.imgur.com/eqofg2u.png" width="250px" height="auto" />
 </p>
 <p>
-  A simple number game made with HTML5, CSS3 and JS.
-  Put the number on the empty spot, at the end of the game there will be only one empty spot and all the number touching this spot will be drowned to the black hole. The Player with less point drowned wins.
-  You can play the game <a href="https://douglas-42.github.io/black-hole-game/">here.</a>
+  A simple number game made with HTML5, CSS3 and JS.<br/>
+  Put the number on the empty spot, at the end of the game there will be only one empty spot and all the number touching this spot will be drowned to the black hole. The Player with less point drowned wins.<br/>
+  You can play the game <a href="https://douglas-42.github.io/black-hole-game/">here.</a><br/>
   This game was inspired on a video from Tom Scott, <a href="https://www.youtube.com/watch?v=zMLE7a3faI4&list=PLBgNyM3aFX4reUjv-AMJatDDvp8cQwdWF&index=3">click here to watch!</a>
 </p>
