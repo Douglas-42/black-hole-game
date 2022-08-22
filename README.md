@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/8NG8JBC.png" width="200px" height="auto" />
+  <img src="https://i.imgur.com/Ojv26Lq.png" width="150px" height="auto" />
 </p>
 <h1>Black Hole</h1>
 <p align="center" >
@@ -9,7 +9,6 @@
 </p>
 <p align="center" >
   <img src="https://i.imgur.com/Ojv26Lq.png" width="250px" height="auto" />
-  <br />
   <img src="https://i.imgur.com/eqofg2u.png" width="250px" height="auto" />
 </p>
 <p>
