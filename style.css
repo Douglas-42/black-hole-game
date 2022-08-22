@@ -1,0 +1,262 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    position: relative;
+    background-color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #040404;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+h1{
+    color: #999;
+}
+.player{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+.player div{
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius:50%;
+    margin-right: 0.5rem;
+}
+.player span{
+    color: #fff;
+}
+.player .score{
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+.playerOne div{
+    background-color: #9A1D22;
+}
+.playerTwo div{
+    background-color: #0571BD;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.table .line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cell{
+    width: 4rem;
+    height: 4rem;
+    border: solid 0.2rem #E7D7DF;
+    border-radius: 50%;
+    background-color: #040404;
+    transition: all 0.2s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+.cell:not(.disabled):hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+.pieces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pieces .cell{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+}
+.playerOneCell{
+    background-color: #9A1D22;
+}
+.playerTwoCell{
+    background-color: #0571BD;
+}
+.disabled{
+    opacity: 0.25;
+}
+.disabled:hover{
+    cursor: default;
+}
+.panel{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color:#fff;
+    background-color: #000;
+    opacity: 0.97;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.panel > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.panel .endGameDesc{
+    flex-direction: column;
+}
+.panel .endGameDesc p{
+    margin-bottom: -2rem;
+    margin-top: -2rem;
+    color: #c9c9c9;
+    text-align: center;
+    padding: 1rem;
+}
+.panel button{
+    font-size: 1.2rem;
+    padding: 0.75rem 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0571BD;
+    border-radius: 0.5rem;
+    transition: all 0.25s;
+}
+.panel button:nth-child(2){
+    background-color: #9A1D22;
+}
+.panel button:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+.panel .playerGOInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel .playerGOInfo p:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.startGame{
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+.startGame div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.startGame > .gameButtons{
+    flex-direction: row;
+    gap: 0;
+}
+.startGame  button{
+    height: 5rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} 
+.startGame p{
+    text-align: center;
+    color: #ccc;
+    width: 75%;
+}
+.startGame h1{
+    text-align: center;
+    color: #ccc;
+    width: 75%;
+    font-size: 2rem;
+    margin-bottom: -4rem;
+}
+.startGame a{
+    color: #0571BD;
+}
+.startGame span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.p1{
+    color: #9A1D22;
+}
+.p2{
+    color: #0571BD;
+}
+.winner{
+    font-size: 3rem;
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+@media only screen and (max-width: 740px) {
+    main{
+        flex-direction: column;
+    }
+    .pieces{
+        flex-direction: row;
+    }
+    .table{
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    .hideMob{
+        display: none;
+    }
+    header > .player span:nth-child(2){
+        display: none;
+    }
+    .startGame p{
+        width: 95%;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 485px) {
+    .pieces{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .pieces > .cell{
+        width: 15vw;
+        height: 15vw;
+        margin: 0 1.75vw 5vw;
+    }
+    .table > .line > .cell{
+        width: 3rem;
+        height: 3rem;
+    }
+    .startGame > .gameButtons{
+        flex-direction: column;
+    }
+}

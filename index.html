@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Black Hole Game</title>
+</head>
+<body>
+    <header>
+        <div class="player playerOne">
+            <div class="playerColor"></div>
+            <span>Player One</span>
+            <span class="score">00</span>
+        </div>
+        <h1>Black Hole Game</h1>
+        <div class="player playerTwo">
+            <div class="playerColor"></div>
+            <span>Player Two</span>
+            <span class="score">00</span>
+        </div>
+    </header>
+    <main>
+        <div class="pieces"></div>
+        <div class="table"></div>
+        <div class="pieces"></div>
+    </main>
+    <div class="panel hide">
+        <div>
+            <div class="playerGOInfo p1">
+                <p>Player One</p>
+                <p class="playerScore">00</p>
+            </div>
+            <div class="playerGOInfo p2">
+                <p>Player Two</p>
+                <p class="playerScore">00</p>
+            </div>
+        </div>
+        <div  class="endGameDesc">
+            <p class="winner">Player Two Won!</p>
+            <p class="endGameSubtitle">Player One had more points sucked into the black hole, so he lost!</p>
+        </div>
+        <div>
+            <button onclick="resetGame()">Play Again</button>
+            <button>No, thanks</button>
+        </div>
+    </div>
+    <div class="panel startGame">
+        <div>
+            <h1>How to play Black Hole?</h1>
+            <p>
+                Put the number on the empty spot, at the end of the game there will be only one empty spot and all the number touching the spot will be drowned to the black hole.
+                The Player with less point drowned wins.
+                This game was inspired on a video from Tom Scott, <a href="https://www.youtube.com/watch?v=zMLE7a3faI4&list=PLBgNyM3aFX4reUjv-AMJatDDvp8cQwdWF&index=3" target="_blank">click here to watch!</a>
+            </p>
+        </div>
+        <div class="gameButtons">
+            <button onclick="setIsPlayingWithBot(false)">
+                Player VS Player
+            </button>
+            <button onclick="setIsPlayingWithBot(true)">
+                Player VS Computer
+            </button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
