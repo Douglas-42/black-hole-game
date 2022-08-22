@@ -88,6 +88,7 @@ const createPlayersPieces = ()=>{
 const selectPiece = (e,buttonId=false)=>{
     if(!buttonId){
         let _button = e.target;
+        e.target.disabled = true;
         if(_button.getAttribute("player") == game.turn){
             game.pieceSelected = _button.getAttribute("id");
         }
@@ -97,7 +98,7 @@ const selectPiece = (e,buttonId=false)=>{
 }
 const choosePieceSlot = (e,buttonId=false)=>{
     let _slot = "";
-    if(!buttonId) 
+    if(!buttonId)
         _slot = e.target.getAttribute("id").split(",");
     else _slot = buttonId.split(",");
     if(game.tableConfiguration[_slot[0]][_slot[1]].id == 0 && game.pieceSelected != 0){
